@@ -1,9 +1,9 @@
 {
   "name": "mm-client",
-  "version": "0.0.0",
-  "description": "Small description for mm-client goes here",
+  "version": "1.0.0",
+  "description": "web client for mentor match app",
   "license": "MIT",
-  "author": "",
+  "author": "Elana Kopelevich",
   "directories": {
     "doc": "doc",
     "test": "tests"
