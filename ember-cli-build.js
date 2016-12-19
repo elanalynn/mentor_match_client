@@ -4,12 +4,24 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    // sassOptions: {
+    //   sourceMap: true
+    // }
+    // outputPaths: {
+    //   app: {
+    //     css: {
+    //       'app': '/assets/mm-client.css'
+    //     }
+    //   }
+    // }
   });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
-  //
+
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values
