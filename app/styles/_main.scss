@@ -28,13 +28,25 @@ main {
     padding: 20px 30px;
     background-color: $green;
     text-transform: uppercase;
+    border-radius: 0;
+    position: relative;
   }
 
-  .btn-mentor {
-    border-left: 30px solid $orange;
+  .clip-accent {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 30%;
+    height: 50%;
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 100%);
   }
 
-  .btn-mentee {
-    border-left: 30px solid $yellow;
+  .btn-be_mentor {
+    background-color: $orange;
+  }
+
+  .btn-get_mentor {
+    background-color: $yellow;
   }
 }
