@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('mentors');
+  this.route('mentor-signup');
+  this.route('mentee-signup');
+  this.route('login');
 });
 
 export default Router;
