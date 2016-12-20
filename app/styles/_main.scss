@@ -3,13 +3,12 @@ body {
   align-items: center;
   justify-content: center;
   background-color: $dark-grey;
-  background-image: url('/assets/images/background.jpg');
   background-size: cover;
   font-family: 'Anonymous Pro', sans-serif;
 }
 
 main {
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   color: $off-white;

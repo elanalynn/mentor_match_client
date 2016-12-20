@@ -1,4 +1,9 @@
-{{#each model as |mentor|}}
-  <p>...{{mentor.id}}</p>
-  <p>...{{mentor.first_name}}</p>
-{{/each}}
+<ul>
+  {{#each model as |mentor|}}
+    <li>
+      <p>{{mentor.first}} {{mentor.last}}</p>
+      <p>{{mentor.title}}, {{mentor.company}}</p>
+      <p>Strengths: {{mentor.strengths}}</p>
+    </li>
+  {{/each}}
+</ul>

@@ -1,1 +1,27 @@
-{{outlet}}
+<article class="container">
+  <h2>You want to be a Mentor</h2>
+
+  <p>Thank you for your willingness to share your knowledge and help others succeed. Before you go on and sign up, please take a moment to read our definition of a mentor and make sure that your ideas will work with this program.</p>
+
+  <h3>What is a mentor?</h3>
+
+  <p>Being a mentor is not a sacrifice. In fact, we like to think that the professional mentor/mentee relationship is even more beneficial to the mentor than the mentee. Why? Because teaching is learning.</p>
+
+  <h3>What can you expect?</h3>
+
+  <p>What you give and get out of this is truly is up to you and your mentee. We will do our best to match you based on mutual interests, goals, availability, and location.</p>
+
+  <p>...</p>
+
+  {{#link-to 'safety' class="small-print"}}
+    Read our disclaimer and safety suggestions.
+  {{/link-to}}
+
+  <h3>Okay, are you ready to get started?</h3>
+
+  {{#link-to 'mentor-signup.form' class=" btn btn-default"}}
+    I want to be a mentor!
+  {{/link-to}}
+
+  {{outlet}}
+</article>

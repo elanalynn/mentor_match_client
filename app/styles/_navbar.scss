@@ -1,4 +1,16 @@
 .mm-navbar {
   background-color: rgba(63, 70, 78, 0.2);
   border-bottom: 1px solid $blue-grey;
+
+  a {
+    color: $off-white;
+  }
+
+  li > a:hover, li > a:focus {
+    background-color: $blue-grey;
+  }
+}
+
+.hide {
+  display: none;
 }

@@ -10,9 +10,14 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('mentors');
-  this.route('mentor-signup');
-  this.route('mentee-signup');
+  this.route('mentor-signup', function() {
+    this.route('form');
+  });
+  this.route('mentee-signup', function() {
+    this.route('form');
+  });
   this.route('login');
+  this.route('safety');
 });
 
 export default Router;
