@@ -1,12 +1,24 @@
-<form>
+<form class="form-profile">
+  <p>Fill out some basic information to get started.</p>
  <div class="form-group">
    <label for="title">What is your job title?</label>
    <input type="text" class="form-control" id="title" placeholder="title">
  </div>
  <div class="form-group">
-   <label for="What is your current company?">Company</label>
+   <label for="time-in-current-role">How long have you been in this kind of role?</label>
+   {{profile-slider}}
+ </div>
+ <div class="form-group">
+   <label for="company">Company</label>
    <input type="text" class="form-control" id="company" placeholder="company">
  </div>
-
- <button type="submit" class="btn btn-default">Submit</button>
+ <div class="form-group">
+   <label for="why">Why do you want to be a mentor?</label>
+   <input type="text" class="form-control" id="why" placeholder="why">
+ </div>
+ <div class="form-group">
+   <label for="specialties">What are your specialties?</label>
+   <input type="text" class="form-control" id="specialties" placeholder="specialties">
+ </div>
+ <button type="submit" class="btn btn-success mm-btn">Submit</button>
 </form>
