@@ -10,12 +10,10 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('mentors');
-  this.route('mentor-signup', function() {
-    this.route('form');
-  });
-  this.route('mentee-signup', function() {
-    this.route('form');
-  });
+  this.route('mentor-signup');
+  this.route('mentor-signup-form');
+  this.route('mentee-signup');
+  this.route('mentee-signup-form');
   this.route('login', function() {
     this.route('local-signup');
     this.route('local-login');
