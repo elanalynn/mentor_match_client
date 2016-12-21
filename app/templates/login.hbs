@@ -9,9 +9,11 @@
 
 <form class="form-inline">
   <div class="form-group">
-    <input type="email" class="form-control" id="email-login-signup" placeholder="jane.doe@example.com">
+    {{input type="email" class="form-control" id="email-login-signup" placeholder="jane.doe@example.com"}}
   </div>
-  <button type="submit" class="btn btn-default">Go</button>
+  {{#link-to 'login.local-login' type="submit" class="btn btn-success mm-btn"}}
+    Go
+  {{/link-to}}
 </form>
 
 {{outlet}}

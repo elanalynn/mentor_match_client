@@ -16,7 +16,10 @@ Router.map(function() {
   this.route('mentee-signup', function() {
     this.route('form');
   });
-  this.route('login');
+  this.route('login', function() {
+    this.route('local-signup');
+    this.route('local-login');
+  });
   this.route('safety');
 });
 

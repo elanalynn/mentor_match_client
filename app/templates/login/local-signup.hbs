@@ -1,0 +1,12 @@
+<form {{action 'authenticate' on='submit'}}>
+  <div class="form-group">
+    <label for="password">Login</label>
+    {{input id='password' value=password}}
+  </div>
+  <button type="submit">Login</button>
+  {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+  {{/if}}
+</form>
+
+{{outlet}}
