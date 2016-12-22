@@ -20,9 +20,9 @@ module.exports = function(defaults) {
   // output files.
 
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
-  app.import('bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css');
-  app.import('bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js');
+  // app.import('bower_components/jquery/dist/jquery.min.js');
+  // app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+
 
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
