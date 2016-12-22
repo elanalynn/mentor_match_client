@@ -1,25 +1,34 @@
----
 language: node_js
 node_js:
-  - "4"
-
+- '4'
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 sudo: false
-
 cache:
   directories:
-    - $HOME/.npm
-    - $HOME/.cache # includes bowers cache
-
+  - "$HOME/.npm"
+  - "$HOME/.cache"
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - bower --version
-  - npm install phantomjs-prebuilt
-  - node_modules/phantomjs-prebuilt/bin/phantomjs --version
-
+- npm config set spin false
+- npm install -g bower
+- bower --version
+- npm install phantomjs-prebuilt
+- node_modules/phantomjs-prebuilt/bin/phantomjs --version
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: Znmdt1F26UGvpiG5LXFIYm2PKvapJ+u2YrgoqdIVHU3w15LtMkI7vqatNR4mBTbLoUKsG7QESVKGfa5F9Cz/0HTqWUFXyMo5po8FHODiVg0P/IV5CYI/G7YnKaneI+L3fuCjKCfOzT1TufyZksFxzE8PxMXnZPsY8WkGCYxcKuXOF1Ccmc9J/gsez34KHjl4BEXrpCTuFUklkLYOest24Xu6sIhW+IA9W3sQvJfdtNisDr0WjBxkrDxsTM79K0/rQm5YrRPlRpGy4w4FrMGpy886sZ9wDG/KGWcEEW5CV1pWPpfQyIx8wWAR6nKqIr4q6Xwc+8+eLkPkUhzGs1By++rSY4eBFM41oXjs51sdywc4/KmKCKAmFKjLzUNKOEzVlzDCn+6FxYiY2G3uDUSaixT3nFnP+kMjIjJu3bp6EujsM6qHJyvJKb0NHJvpJmOlK7hHtPdcIr70lS22iHeQUAHep9FwEGX2pbfctbz15OviPpEhRTuB25lIkkd1Q0d8AxlQb8WVnf/e50AhhinS1Ea9seg/I6gm9HS1JppOwMMbsyybg/de9YxItx6GhCgfd/Pd++ji8+SYpNNbBZJOOKTy5hHg15c502YLS7C7yzav43ZD8RLeSRbaKjWwDwzaNRGMNLyzDlLwUWq8c+6JDCmIzvtZZGH4POVzMwkIo/I=
+  app: ek-mm-client
+  on:
+    repo: elanalynn/mentor_match_client
