@@ -23,7 +23,7 @@ module.exports = function(environment) {
     },
 
     fastboot: {
-      hostWhitelist: [/^localhost:\d+$/]
+      hostWhitelist: ['ek-mm-client.herokuapp.com', /^localhost:\d+$/]
     }
   };
 
