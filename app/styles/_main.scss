@@ -26,7 +26,8 @@ main {
     color: $off-white;
     font-size: 1.2em;
     padding: 20px 30px;
-    background-color: $green;
+    background-color: $dark-grey;
+    border: 1px solid $off-white;
     text-transform: uppercase;
     position: relative;
   }
