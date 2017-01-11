@@ -1,7 +1,7 @@
-import { test } from 'qunit';
-import moduleForAcceptance from 'mm-client/tests/helpers/module-for-acceptance';
-
-moduleForAcceptance('Acceptance | list-mentors');
+// import { test } from 'qunit';
+// import moduleForAcceptance from 'mm-client/tests/helpers/module-for-acceptance';
+//
+// moduleForAcceptance('Acceptance | list-mentors');
 
 // test('visiting /list-mentors', function(assert) {
 //   visit('/');
