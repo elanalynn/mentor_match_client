@@ -5,7 +5,7 @@ moduleFor('route:mentor-signup', 'Unit | Route | mentor signup', {
   // needs: ['controller:foo']
 });
 
-test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
-});
+// test('it exists', function(assert) {
+//   let route = this.subject();
+//   assert.ok(route);
+// });

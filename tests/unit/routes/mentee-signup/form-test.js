@@ -5,7 +5,7 @@ moduleFor('route:mentee-signup/form', 'Unit | Route | mentee signup/form', {
   // needs: ['controller:foo']
 });
 
-test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
-});
+// test('it exists', function(assert) {
+//   let route = this.subject();
+//   assert.ok(route);
+// });
