@@ -28,7 +28,7 @@ export default function() {
           zip_code: '80203',
           strengths: ['Angular', 'JavaScript'],
           weaknesses: ['Ember'],
-          availability: .5,
+          availability: 0.5,
           image: 'https://files.allaboutbirds.net/wp-content/themes/html5blank-stable/images/blue-winged-warbler.jpg'
         }
       }, {
@@ -42,7 +42,7 @@ export default function() {
           zip_code: '80203',
           strengths: ['Computer Science', 'JavaScript'],
           weaknesses: ['Rails'],
-          availability: .75,
+          availability: 0.75,
           image: 'https://files.allaboutbirds.net/wp-content/themes/html5blank-stable/images/blue-winged-warbler.jpg'
         }
       }]
