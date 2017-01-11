@@ -10,26 +10,26 @@ test('visiting /list-mentors', function(assert) {
   });
 });
 
-test('should redirect to mentors route', function (assert) {
-
-});
-
-test('should list available mentors.', function (assert) {
-
-});
-
-test('should link to information about the mentor.', function (assert) {
-
-});
-
-test('should link to contact information.', function (assert) {
-
-});
-
-test('should filter the list of mentors by city.', function (assert) {
-
-});
-
-test('should show details for a recommended mentor', function (assert) {
-
-});
+// test('should redirect to mentors route', function (assert) {
+//
+// });
+//
+// test('should list available mentors.', function (assert) {
+//
+// });
+//
+// test('should link to information about the mentor.', function (assert) {
+//
+// });
+//
+// test('should link to contact information.', function (assert) {
+//
+// });
+//
+// test('should filter the list of mentors by city.', function (assert) {
+//
+// });
+//
+// test('should show details for a recommended mentor', function (assert) {
+//
+// });

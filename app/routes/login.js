@@ -30,7 +30,7 @@ const loginOptions = [
     endpoint: '#',
     class: 'etsy'
   },
-]
+];
 
 export default Ember.Route.extend({
   model() {
